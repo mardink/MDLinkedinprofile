@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5.0" client="site" method="upgrade">
+    <name>MD Linkedinprofile</name>
+    <author>M. Hiddink</author>
+	<creationDate>26-12-2011</creationDate>
+	<authorEmail>support@mardinkwebdesign.com</authorEmail>
+	<authorUrl>http://www.mardinkwebdesign.com/</authorUrl>
+    <version>1.0.2</version>
+    <licence>GNU/GPL http://www.gnu.org/licenses/gpl.html</licence>
+	<description>MOD_MDLINKEDINPROFILE_DESCRIPTION</description>
+	
+    <files>
+        <filename module="mod_mdlinkedinprofile">mod_mdlinkedinprofile.php</filename>
+        <filename>index.html</filename>
+        <folder>tmpl</folder>
+        <folder>languages</folder>
+    </files>
+ <languages folder="languages">
+<language tag="en-GB">en-GB/en-GB.mod_mdlinkedinprofile.ini</language>
+<language tag="en-GB">en-GB/en-GB.mod_mdlinkedinprofile.sys.ini</language>
+<language tag="nl-NL">nl-NL/nl-NL.mod_mdlinkedinprofile.ini</language>
+<language tag="nl-NL">nl-NL/nl-NL.mod_mdlinkedinprofile.sys.ini</language>
+</languages>   
+<config>
+<fields name="params">
+	<fieldset name="basic">
+		<field name="profile" type="text" size="64" default="http://nl.linkedin.com/pub/martijn-hiddink/7/b07/65" label="MOD_MDLINKEDINPROFILE_PROFILE_LABEL" description="MOD_MDLINKEDINPROFILE_PROFILE_DESCR" />
+		<field name="name" type="text" size="64" default="Your name" label="MOD_MDLINKEDINPROFILE_NAME_LABEL" description="MOD_MDLINKEDINPROFILE_NAME_DESCR" />
+		<field name="Buttontype" type="list" default="1" label="MOD_MDLINKEDINPROFILE_BUTTONTYPE_LABEL" description="MOD_MDLINKEDINPROFILE_BUTTONTYPE_DESCR">
+			<option value="0">View my profile 160x33</option>
+			<option value="1">My profile 160x33</option>
+			<option value="2">View my profile 160x25</option>
+			<option value="3">View my profile 120x33</option>
+			<option value="4">Profile(grey)80x15</option>
+			<option value="5">Profile(Blue)80x15</option>
+			<option value="6">Profile(Button)80x15</option>
+			<option value="7">View my profile 20x15</option>
+			<option value="8">View (your name) profile 20x15</option>
+					</field>
+	</fieldset>
+	<fieldset name="advanced">
+				<field name="moduleclass_sfx" type="text" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+			</fieldset>
+</fields>
+</config>
+</extension>
