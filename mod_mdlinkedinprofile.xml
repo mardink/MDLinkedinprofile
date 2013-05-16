@@ -2,10 +2,10 @@
 <extension type="module" version="2.5.0" client="site" method="upgrade">
     <name>MD Linkedinprofile</name>
     <author>M. Hiddink</author>
-	<creationDate>26-12-2011</creationDate>
+	<creationDate>16-05-2013</creationDate>
 	<authorEmail>support@mardinkwebdesign.com</authorEmail>
 	<authorUrl>http://www.mardinkwebdesign.com/</authorUrl>
-    <version>1.0.2</version>
+    <version>1.1.0</version>
     <licence>GNU/GPL http://www.gnu.org/licenses/gpl.html</licence>
 	<description>MOD_MDLINKEDINPROFILE_DESCRIPTION</description>
 	
@@ -24,7 +24,7 @@
 <config>
 <fields name="params">
 	<fieldset name="basic">
-		<field name="profile" type="text" size="64" default="http://nl.linkedin.com/pub/martijn-hiddink/7/b07/65" label="MOD_MDLINKEDINPROFILE_PROFILE_LABEL" description="MOD_MDLINKEDINPROFILE_PROFILE_DESCR" />
+		<field name="profile" type="text" size="64" default="" label="MOD_MDLINKEDINPROFILE_PROFILE_LABEL" description="MOD_MDLINKEDINPROFILE_PROFILE_DESCR" />
 		<field name="name" type="text" size="64" default="Your name" label="MOD_MDLINKEDINPROFILE_NAME_LABEL" description="MOD_MDLINKEDINPROFILE_NAME_DESCR" />
 		<field name="Buttontype" type="list" default="1" label="MOD_MDLINKEDINPROFILE_BUTTONTYPE_LABEL" description="MOD_MDLINKEDINPROFILE_BUTTONTYPE_DESCR">
 			<option value="0">View my profile 160x33</option>
@@ -43,4 +43,8 @@
 			</fieldset>
 </fields>
 </config>
+<updateservers>
+    <server type="extension" priority="1"
+        name="MDLinkedinprofile Update"><![CDATA[http://www.mardinkwebdesign.com/index.php?option=com_ars&view=update&task=stream&format=xml&id=3&dummy=extension.xml]]></server>
+</updateservers>
 </extension>
