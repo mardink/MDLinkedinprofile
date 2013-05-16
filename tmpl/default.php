@@ -21,7 +21,7 @@
 	}
 	$param = $params->get('Buttontype', '0');
 	$name = $params->get('name'); ?>
-	<div class="<?php echo $moduleclass_sfx ?>"	
+	<div class="mdlinkedinprofile <?php echo $moduleclass_sfx ?>"	
 <?php if ($param=="0") {
 	?>
 <a href="<?php echo $params->get('profile'); ?>" target="_blank">
