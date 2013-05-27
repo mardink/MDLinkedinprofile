@@ -2,7 +2,7 @@
 /**
  * @package Joomla
  * @subpackage mdlinkedinprofile
- * @copyright (C) 2011 Martijn Hiddink
+ * @copyright (C) 2013 Martijn Hiddink
  * @license GNU/GPL, 
  * mdlinkedinprofile is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License 3
